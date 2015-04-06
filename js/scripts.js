@@ -6,7 +6,7 @@ var queenAttack = function(queen, attack) {
         return true;
     }
 
-    else if(queen([1] - attack[1]) < 2)
+    if(queen([1] - attack[1]) < 2)
     {
         return true;
     }
@@ -23,6 +23,22 @@ var queenAttack = function(queen, attack) {
     {
         return true;
     }
+
+    else if (queen([0] - attack[0] < 4) && (queen[1] - attack[1] < 4))
+    {
+        return true;
+    }
+
+    if ((queen[0] - attack[0]) === (queen[1] - attack[1]))
+    {
+        return true;
+    }
+
+
+
+
+
+
     else {
     return false;
     }

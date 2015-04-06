@@ -52,6 +52,7 @@ var queenAttack = function(queen, attack)
 
 
          var attacker_str_to_no = attacker_coordinates.split(",");
+
          for (i = 0; i < attacker_str_to_no.length; i++)
          {
          var attacker = parseInt(attacker_str_to_no[i]);
